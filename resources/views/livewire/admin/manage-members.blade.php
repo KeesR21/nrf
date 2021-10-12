@@ -59,10 +59,9 @@
                             @error('category') <span style="font-weight: bold; color:red;"> {{ $message }} </span> @enderror
                         </div>
                         @if($editMode)
-                            <img src="{{ asset('uploads/data/'. $photo) }}" width="50%" style="margin:0 0 10px 200px;" alt="">
-                        @endif
-                        @if($photo)
-                            <img src="{{ $photo->temporaryUrl() ?? '' }}" width="50%" style="margin:0 0 10px 200px;" alt="">
+                        <img src="{{ asset('uploads/data/'. $photo) }}" width="50%" style="margin:0 0 10px 200px;" alt="">
+                        @elseif($photo)
+                        <img src="{{ $photo->temporaryUrl() ?? '' }}" width="50%" style="margin:0 0 10px 200px;" alt="">
                         @endif
                         <div class="form-group row">
                             <label class="col-sm-2 col-form-label">Upload Photo *</label>

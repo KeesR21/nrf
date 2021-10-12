@@ -41,9 +41,8 @@ class ManageTrainings extends Component
             session()->flash('message', 'Trainings Created Successfuly');
 
             $this->resetInputs();
-        }else{
-            if($this->training)
-            {
+        } else {
+            if ($this->training) {
                 $this->validate([
                     'title' => 'required|min:10',
                     'content' => 'required|min:50',
@@ -54,17 +53,15 @@ class ManageTrainings extends Component
                     'content' => $this->content,
                 ]);
 
-                session()->flash('message','Training updated successfully');
+                session()->flash('message', 'Training updated successfully');
                 $this->resetInputs();
                 $this->editMode = false;
             }
         }
-
     }
 
-    public function loadTrainingInfoToForm($id)
+    public function loadTrainingInfoToForm(Training $training)
     {
-        $training = Training::find($id);
         $this->editMode = true;
         $this->training = $training;
 

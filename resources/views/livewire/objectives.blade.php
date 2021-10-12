@@ -29,19 +29,8 @@
                         <h3 class="title-w3l">Our objectives</h3>
 
                         @foreach(explode('  ',$objective[0]) as $item)
-                            <p>{{ $item }}</p>
+                            <p style="line-height:1.6">{{ $item }}</p>
                         @endforeach
-                        
-                        <p class="mt-4">Sed in metus libero. Sed volutpat eget dui ut tempus. Fusce fringilla tincidunt laoreet
-                            Morbi ac metus vitae diam scelerisque malesuada eget eu mauris.Cras varius lorem ac velit pharetra.
-                        </p>
-                        <p class="mt-4">
-                            Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consectetur adipisicing
-                            elit. Cras varius lorem ac velit pharetra, non scelerisque mi vulputate. Phasellus bibendum.
-                        </p>
-                        <p class="mt-4">Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consectetur adipisicing
-                            elit. Cras varius lorem ac velit pharetra, non scelerisque mi vulputate. Phasellus bibendum.
-                        </p>
 
                     </div>
                 </div>

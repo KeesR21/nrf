@@ -119,7 +119,7 @@
                                 <td>{{ $training->title }}</td>
                                 <td>
                                     <span>
-                                        <button wire:click="loadArticleInfoToForm({{ $training->id }})" class="btn btn-sm btn-round btn-outline-success">Edit</button>
+                                        <button wire:click="loadTrainingInfoToForm({{ $training }})" class="btn btn-sm btn-round btn-outline-success">Edit</button>
                                         <button wire:click="deleteArticle({{ $training->id }})" class="btn btn-sm btn-round btn-outline-danger">Delete</button>
                                     </span>
                                 </td>
